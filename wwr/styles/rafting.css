@@ -82,3 +82,52 @@ footer .social {
 footer .social img {
   height: 24px;
 }
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.employee-profiles figure {
+  width: 200px;
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.contact-form textarea,
+.contact-form input,
+.contact-form button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #006994;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #004f73;
+}
