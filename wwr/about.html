@@ -1,64 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | White Water Rafting</title>
-  <link rel="stylesheet" href="rafting.css">
-</head>
-<body>
-  <header>
-    <img src="images/logo.png" alt="Rafting Site Logo">
-    <h1>White Water Rafting</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <main>
-    <section class="history">
-      <h2>Our History</h2>
-      <p>White Water Rafting was founded in 1995 with the mission to offer thrilling and safe river rafting experiences for adventure lovers of all ages.</p>
-      <p>Over the years, we’ve grown into one of the most trusted rafting companies, guiding thousands through scenic and exhilarating river routes.</p>
-    </section>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
 
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <figure>
-        <img src="images/adventure1.jpg" alt="Los Dientes del Diablo">
-        <figcaption>Los Dientes del Diablo</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure2.jpg" alt="Big Mallard">
-        <figcaption>Big Mallard</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure3.jpg" alt="Half Day Adventure">
-        <figcaption>Half Day Adventure</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure4.jpg" alt="Rapid Rush">
-        <figcaption>Rapid Rush</figcaption>
-      </figure>
-      <figure>
-        <img src="images/adventure5.jpg" alt="Calm Canyon Cruise">
-        <figcaption>Calm Canyon Cruise</figcaption>
-      </figure>
-    </section>
-  </main>
+/* Header uses CSS Grid */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #004080;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
 
-  <footer>
-    <p>&copy; 2025 White Water Rafting | All rights reserved</p>
-    <div class="social">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    </div>
-  </footer>
-</body>
-</html>
+.logo h1 {
+  font-size: 1.8rem;
+}
+
+/* Navigation uses Flexbox */
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.site-nav ul li {
+  margin-left: 25px;
+}
+
+.site-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.site-nav ul li a:hover,
+.site-nav ul li a.active {
+  background-color: #0073e6;
+}
+
+/* Main content styling */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+main h2 {
+  color: #004080;
+  margin-bottom: 12px;
+}
+
+/* Footer styling */
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background-color: #004080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+/* Social media icons container aligned right */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* Make icons white */
+  transition: filter 0.3s;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) invert(0.6);
+}

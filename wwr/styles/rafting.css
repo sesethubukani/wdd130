@@ -1,133 +1,107 @@
-/* General Reset */
+/* Reset some default styles */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-}
-
-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  background-color: #006994;
-  padding: 10px 20px;
-  color: white;
-}
-
-header img {
-  height: 50px;
-}
-
-header h1 {
-  text-align: center;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
+  background-color: #f4f4f4;
+  color: #333;
   padding: 20px;
 }
 
-.history, .adventures {
+/* Header uses CSS Grid */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #004080;
+  color: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+}
+
+/* Navigation uses Flexbox */
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.site-nav ul li {
+  margin-left: 25px;
+}
+
+.site-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.site-nav ul li a:hover,
+.site-nav ul li a.active {
+  background-color: #0073e6;
+}
+
+/* Main content styling */
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main section {
   margin-bottom: 30px;
 }
 
-.adventures {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
+main h2 {
+  color: #004080;
+  margin-bottom: 12px;
 }
 
-.adventures figure {
-  width: 18%;
-  text-align: center;
-}
-
-.adventures img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-footer {
+/* Footer styling */
+.site-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background-color: #004080;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #006994;
-  color: white;
-  padding: 10px 20px;
+  border-radius: 0 0 8px 8px;
 }
 
-footer .social {
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+/* Social media icons container aligned right */
+.social-icons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
-footer .social img {
+.social-icons a img {
+  width: 24px;
   height: 24px;
-}
-.map-container iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
+  filter: brightness(0) invert(1); /* Make icons white */
+  transition: filter 0.3s;
 }
 
-.employee-profiles {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.employee-profiles figure {
-  width: 200px;
-  text-align: center;
-}
-
-.employee-profiles img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 600px;
-}
-
-.contact-form textarea,
-.contact-form input,
-.contact-form button {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  background-color: #006994;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #004f73;
+.social-icons a:hover img {
+  filter: brightness(0) invert(0.6);
 }
