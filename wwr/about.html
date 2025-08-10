@@ -3,33 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact Whitewater Rafting Adventures for inquiries, reservations, and suggestions." />
-  <title>Whitewater Rafting Adventures - Contact Us</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>About Us - Rafting Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo">
-      <h1>Whitewater Rafting Adventures</h1>
-    </div>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
+  <header>
+    <nav class="navbar">
+      <a href="about.html" class="logo-link">
+        <img src="images/logo.png" alt="Rafting Logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter" /></a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="company-info">
-      <h2>Contact Information</h2>
-      <p>Address: 123 River Road, Adventure City, USA</p>
-      <p>Phone: (555) 123-4567</p>
-      <p>Email: info@whitewaterrrafting.com</p>
+    <section class="hero-section">
+      <img src="images/hero.jpg" alt="Rafting Adventure Hero" class="hero-img" />
+      <h1>Welcome to Rafting Adventures</h1>
+      <p>Discover thrilling rafting experiences in breathtaking locations.</p>
+    </section>
 
-      <h3>Our Location</h3>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.204637765474!2d-122.41941508468107!3d37.774929779759065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f1
+    <section class="adventure-gallery">
+      <h2>Our Top Adventures</h2>
+      <div class="adventure-cards">
+
+        <article class="adventure-card">
+          <img src="images/adventure1.jpg" alt="Adventure 1 - Rapids" />
+          <h3>Rapid Rush</h3>
+          <p>Experience the thrill of navigating fast-moving rapids with expert guides.</p>
+        </article>
+
+        <article class="adventure-card">
+          <img src="images/adventure2.jpg" alt="Adventure 2 - Forest River" />
+          <h3>Forest River Journey</h3>
+          <p>Glide through serene forested rivers surrounded by stunning nature.</p>
+        </article>
+
+        <article class="adventure-card">
+          <img src="images/adventure3.jpg" alt="Adventure 3 - Canyon Rapids" />
+          <h3>Canyon Rapids</h3>
+          <p>Take on challenging rapids carved deep in majestic canyons.</p>
+        </article>
+
+        <article class="adventure-card">
+          <img src="images/adventure4.jpg" alt="Adventure 4 - Sunset Rafting" />
+          <h3>Sunset Rafting</h3>
+          <p>Enjoy calm waters and breathtaking sunsets on an evening rafting trip.</p>
+        </article>
+
+        <article class="adventure-card">
+          <img src="images/adventure5.jpg" alt="Adventure 5 - Mountain Rapids" />
+          <h3>Mountain Rapids</h3>
+          <p>Conquer exhilarating rapids high up in the mountain streams.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
+  </footer>
+</body>
+</html>

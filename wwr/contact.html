@@ -3,100 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact Whitewater Rafting Adventures for inquiries, reservations, and suggestions." />
-  <title>Whitewater Rafting Adventures - Contact Us</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Contact Us - Rafting Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo">
-      <h1>Whitewater Rafting Adventures</h1>
-    </div>
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
+  <header>
+    <nav class="navbar">
+      <a href="about.html" class="logo-link">
+        <img src="images/logo.png" alt="Rafting Logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter" /></a>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="company-info">
-      <h2>Contact Information</h2>
-      <p>Address: 123 River Road, Adventure City, USA</p>
-      <p>Phone: (555) 123-4567</p>
-      <p>Email: info@whitewaterrrafting.com</p>
+    <section class="contact-info">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Reach out for bookings or questions.</p>
 
-      <h3>Our Location</h3>
+      <address>
+        <strong>Rafting Adventures HQ</strong><br />
+        123 Adventure St,<br />
+        San Francisco, CA 94105<br />
+        Phone: (415) 555-1234<br />
+        Email: info@raftingadventures.com
+      </address>
+
+      <h2>Our Location</h2>
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.204637765474!2d-122.41941508468107!3d37.774929779759065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8a3f8cd7%3A0x89c3b4d7b2de05a7!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1615979692217!5m2!1sen!2sus"
-          title="Company Location"
-          width="600"
-          height="350"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0195038978793!2d-122.40135028468032!3d37.790841979756565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e0f11cbb%3A0x698d69347a06b3a0!2s123%20Adventure%20St%2C%20San%20Francisco%2C%20CA%2094105!5e0!3m2!1sen!2sus!4v1687163208710!5m2!1sen!2sus"
+          width="100%"
+          height="400"
+          style="border:0;"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </section>
-
-    <section id="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br />
-
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br />
-
-        <p>Purpose of Message:</p>
-        <input type="radio" id="general" name="purpose" value="General Inquiry" checked />
-        <label for="general">General Inquiry</label><br />
-        <input type="radio" id="reservation" name="purpose" value="Reservation Question" />
-        <label for="reservation">Reservation Question</label><br />
-        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" />
-        <label for="suggestion">Website Suggestion</label><br />
-
-        <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br />
-
-        <input type="checkbox" id="newsletter" name="newsletter" />
-        <label for="newsletter">Please subscribe me to the monthly newsletter</label><br />
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <section id="employees">
-      <h2>Meet Our Team</h2>
-      <div class="employee-profiles">
-        <figure>
-          <img src="images/employee1.jpg" alt="Guide John" />
-          <figcaption>John - Senior Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Guide Sarah" />
-          <figcaption>Sarah - Adventure Coordinator</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Guide Mike" />
-          <figcaption>Mike - Safety Specialist</figcaption>
-        </figure>
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Rafting Adventures HQ Location"
+        ></iframe>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p><a href="images/contact-wireframe.png" target="_blank" rel="noopener noreferrer">View Wireframe</a></p>
-    <p>&copy; 2025 Whitewater Rafting | All rights reserved</p>
-    <div class="social-icons">
-      <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
-      <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
-      <a href="#"><img src="icons/twitter.png" alt="Twitter" /></a>
-    </div>
+  <footer>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
   </footer>
 </body>
 </html>
