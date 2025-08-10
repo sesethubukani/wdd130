@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Rafting Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Rafting Logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Experience the Thrill of Rafting with Us</h1>
+      <p>Join us for unforgettable adventures on the most breathtaking rivers.</p>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter" style="max-width:600px; margin:2rem auto; padding:1rem; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+      <h2 style="color:#004a99; text-align:center; margin-bottom:1rem;">Subscribe to Our Newsletter</h2>
+      <form action="#" method="post" style="display:flex; flex-direction:column; gap:1rem;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;" />
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required style="padding:0.5rem; border:1px solid #ccc; border-radius:4px;" />
+        
+        <button type="submit" style="background-color:#0077cc; color:#fff; border:none; padding:0.75rem; border-radius:4px; font-weight:600; cursor:pointer;">Join Now</button>
+      </form>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="text-align:center; margin:3rem 0;">
+      <a href="trips.html" style="background-color:#004a99; color:#fff; padding:1rem 2rem; border-radius:6px; font-weight:700; font-size:1.2rem; text-decoration:none; box-shadow:0 4px 8px rgba(0,0,0,0.2); transition: background-color 0.3s ease;">
+        View Our Trips
+      </a>
+    </section>
+
+    <!-- Content Grid Section -->
+    <section class="adventure-gallery">
+      <h2>About Our Rafting Company</h2>
+      <div class="adventure-cards" style="display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 2rem;">
+
+        <article class="adventure-card">
+          <img src="images/team.jpg" alt="Experienced Guides" />
+          <h3>Experienced Guides</h3>
+          <p>Our certified rafting guides ensure your safety while delivering exciting adventures.</p>
+        </article>
+
+        <article class="adventure-card">
+          <img src="images/equipment.jpg" alt="Top Equipment" />
+          <h3>Top Equipment</h3>
+          <p>We provide all necessary gear, maintained to the highest safety standards.</p>
+        </article>
+
+        <article class="adventure-card">
+          <img src="images/sustainability.jpg" alt="Eco-Friendly" />
+          <h3>Eco-Friendly</h3>
+          <p>Committed to sustainable practices to protect the beautiful rivers and nature.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
+  </footer>
+</body>
+</html>

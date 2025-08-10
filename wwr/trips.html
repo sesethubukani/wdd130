@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trips - Rafting Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Rafting Logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trips.html" class="active">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main style="max-width: 1200px; margin: 2rem auto; padding: 0 1rem;">
+    <h1 style="color:#004a99; margin-bottom:1rem;">Our Rafting Trips</h1>
+
+    <!-- Trip details -->
+    <section style="display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 2rem; margin-bottom: 3rem;">
+      <article class="adventure-card">
+        <img src="images/trip1.jpg" alt="Whitewater Rapids" />
+        <h3>Whitewater Rapids</h3>
+        <p>Challenge yourself on fast-moving, thrilling rapids with breathtaking views.</p>
+      </article>
+
+      <article class="adventure-card">
+        <img src="images/trip2.jpg" alt="Forest River" />
+        <h3>Forest River Journey</h3>
+        <p>Enjoy a peaceful float through serene forest landscapes and wildlife spotting.</p>
+      </article>
+
+      <article class="adventure-card">
+        <img src="images/trip3.jpg" alt="Mountain Rapids" />
+        <h3>Mountain Rapids</h3>
+        <p>Experience high-altitude rafting with exhilarating mountain river rapids.</p>
+      </article>
+    </section>
+
+    <!-- Trips summary table -->
+    <section>
+      <h2 style="color:#004a99; margin-bottom:1rem;">Trip Summary</h2>
+      <table style="width:100%; border-collapse: collapse; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <thead style="background-color:#004a99; color:#fff;">
+          <tr>
+            <th style="padding: 1rem; border: 1px solid #ddd;">Trip Name</th>
+            <th style="padding: 1rem; border: 1px solid #ddd;">Duration</th>
+            <th style="padding: 1rem; border: 1px solid #ddd;">Difficulty</th>
+            <th style="padding: 1rem; border: 1px solid #ddd;">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">Whitewater Rapids</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">2 hours</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">High</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">$120</td>
+          </tr>
+          <tr style="background-color:#f9f9f9;">
+            <td style="padding: 1rem; border: 1px solid #ddd;">Forest River Journey</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">3 hours</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">Moderate</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">$90</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">Mountain Rapids</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">4 hours</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">High</td>
+            <td style="padding: 1rem; border: 1px solid #ddd;">$150</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="text-align:center; margin:3rem 0;">
+      <a href="contact.html" style="background-color:#004a99; color:#fff; padding:1rem 2rem; border-radius:6px; font-weight:700; font-size:1.2rem; text-decoration:none; box-shadow:0 4px 8px rgba(0,0,0,0.2); transition: background-color 0.3s ease;">
+        Contact Us to Book Your Adventure
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
+  </footer>
+</body>
+</html>
