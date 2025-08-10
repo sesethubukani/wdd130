@@ -1,107 +1,53 @@
-/* Reset some default styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Us page for Whitewater Rafting Adventures providing company history and adventure info." />
+  <title>Whitewater Rafting Adventures - About Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <h1>Whitewater Rafting Adventures</h1>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 20px;
-}
+  <main>
+    <section id="history">
+      <h2>Our History</h2>
+      <p>
+        Founded in 1998, Whitewater Rafting Adventures has grown from a small local outfitter to one of the
+        most trusted rafting companies in the region. Our mission has always been to provide safe and exciting
+        rafting experiences that connect people with nature.
+      </p>
+    </section>
 
-/* Header uses CSS Grid */
-.site-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  background-color: #004080;
-  color: white;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-}
+    <section id="adventure">
+      <h2>Our Adventure</h2>
+      <p>
+        We offer rafting trips ranging from calm beginner runs to thrilling whitewater expeditions.
+        All of our guides are certified experts who prioritize safety while ensuring you have an unforgettable adventure.
+      </p>
+    </section>
+  </main>
 
-.logo h1 {
-  font-size: 1.8rem;
-}
-
-/* Navigation uses Flexbox */
-.site-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-}
-
-.site-nav ul li {
-  margin-left: 25px;
-}
-
-.site-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.site-nav ul li a:hover,
-.site-nav ul li a.active {
-  background-color: #0073e6;
-}
-
-/* Main content styling */
-main {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-main section {
-  margin-bottom: 30px;
-}
-
-main h2 {
-  color: #004080;
-  margin-bottom: 12px;
-}
-
-/* Footer styling */
-.site-footer {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 15px 20px;
-  background-color: #004080;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 0 0 8px 8px;
-}
-
-.site-footer p {
-  font-size: 0.9rem;
-}
-
-/* Social media icons container aligned right */
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icons a img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) invert(1); /* Make icons white */
-  transition: filter 0.3s;
-}
-
-.social-icons a:hover img {
-  filter: brightness(0) invert(0.6);
-}
+  <footer class="site-footer">
+    <div class="social-icons">
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="icons/twitter.svg" alt="Twitter" /></a>
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+    </div>
+    <p>© 2025 Whitewater Rafting Adventures. All rights reserved.</p>
+  </footer>
+</body>
+</html>
